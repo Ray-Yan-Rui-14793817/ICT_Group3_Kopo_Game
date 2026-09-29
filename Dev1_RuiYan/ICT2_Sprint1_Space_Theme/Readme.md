@@ -10,3 +10,9 @@
 3. Space Number Ordering
 
 **Status:** Sprint 1 - In Progress
+
+### Current Sprint Work
+
+- 4.1 Space Size Ordering Game - In Progress
+- 4.2 Space Quantity Ordering Game - Todo
+- 4.3 Space Number Ordering Game - Todo
