@@ -1,0 +1,133 @@
+{
+  "checkpoint": "2026-11-05",
+  "developer_confirmation": "Dev1 Rui Yan confirmed US5 and US6 game design, implementation and game testing completed in the user request.",
+  "source_report": "CP5047 Assessment 2 Group Implementation and Demonstration Group3.pdf",
+  "source_report_sha256": "09c217911eff56eaecc524edd40e0060c23960475a66af18ab0d0edae005a36f",
+  "source_report_page_count": 45,
+  "report_screenshots": "Rendered/cropped from existing report; no new gameplay or historical test result invented.",
+  "pause_observed_game_url": "https://www.kopo.com/g/game.php?gno=14378&lid=5381&thmno=5112",
+  "fresh_full_test_suite": "Not performed; completed testing is developer confirmed, with the report evidence linked separately.",
+  "independent_peer_approval": "No reviews recorded on PR #22 when inspected.",
+  "files": [
+    {
+      "path": "Dev1_RuiYan/ICT2_Quality_Evidence/testing/report_section1_us4_us5.png",
+      "bytes": 459386,
+      "width": 828,
+      "height": 1170,
+      "mode": "RGB",
+      "sha256": "bc3cfa22bed621be636dfad9d1b60d75965b876bb10023438f808d6402be6c42",
+      "git_blob_sha1": "6de3590a22ad50453e141e0dc4f0f73af6dee250",
+      "source_pdf_page": 3,
+      "render_dpi": 100,
+      "crop_xywh_pixels": null
+    },
+    {
+      "path": "Dev1_RuiYan/ICT2_Quality_Evidence/testing/report_section1_us6.png",
+      "bytes": 391081,
+      "width": 650,
+      "height": 805,
+      "mode": "RGB",
+      "sha256": "bd016bf3a005c2d17c3e84387b20146f5eb9004eb937ccaafeab3da1824d0932",
+      "git_blob_sha1": "7b1f9f2d8b1871cb5f78be9eea07f807b52b9aa3",
+      "source_pdf_page": 4,
+      "render_dpi": 100,
+      "crop_xywh_pixels": [
+        90,
+        85,
+        650,
+        805
+      ]
+    },
+    {
+      "path": "Dev1_RuiYan/ICT2_Quality_Evidence/refinement/week6_pause_exit_before.png",
+      "bytes": 155973,
+      "width": 700,
+      "height": 775,
+      "mode": "RGB",
+      "sha256": "2ea780958639e85e8772363c00396dc5214c94622d01fd43987accbebdfc3530",
+      "git_blob_sha1": "7ffcc89af8c1da9d4027d6f7a617ce3789795b0d",
+      "source_pdf_page": 35,
+      "render_dpi": 100,
+      "crop_xywh_pixels": [
+        90,
+        290,
+        700,
+        775
+      ]
+    },
+    {
+      "path": "Dev1_RuiYan/ICT2_Quality_Evidence/refinement/week6_restart_followup.png",
+      "bytes": 51387,
+      "width": 700,
+      "height": 420,
+      "mode": "RGB",
+      "sha256": "609f6c652d5c1e62a96add74b1ea71dffed31131ae7c016f2f3d2b28e755c7f6",
+      "git_blob_sha1": "af2f71b31995ef030057ea8d9d76d017fe43592e",
+      "source_pdf_page": 36,
+      "render_dpi": 100,
+      "crop_xywh_pixels": [
+        90,
+        90,
+        700,
+        420
+      ]
+    },
+    {
+      "path": "Dev1_RuiYan/ICT2_Quality_Evidence/refinement/week6_pause_exit_after_retest.png",
+      "bytes": 293219,
+      "width": 840,
+      "height": 910,
+      "mode": "RGB",
+      "sha256": "c1ad61de012d43aa2fb1b215630ed4ce2a8d5bd800f68d337a17883b8cf3f611",
+      "git_blob_sha1": "e05737b089a6463c356a8ef7dd5d07029ee3d8bb",
+      "source_pdf_page": 40,
+      "render_dpi": 110,
+      "crop_xywh_pixels": [
+        45,
+        280,
+        840,
+        910
+      ]
+    },
+    {
+      "path": "Dev1_RuiYan/ICT2_Candy_Theme/Candy_Themes_design/candy_pause_button.png",
+      "bytes": 15106,
+      "width": 324,
+      "height": 115,
+      "mode": "P",
+      "sha256": "8349165bd256dc9a5e7be94d43e66a6a89245a9e83559d936b8bb989e6ada1aa",
+      "git_blob_sha1": "9b80bee14d02c477a067abde95d2fd91d5a6a815",
+      "source_pdf_page": null,
+      "render_dpi": null,
+      "crop_xywh_pixels": null,
+      "source": "testing design/candy_pause_button.png",
+      "byte_identical_to_active_candy_asset": true,
+      "observed_kopo_file_id": 232120,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "frame_alpha_bboxes": [
+        [
+          2,
+          4,
+          107,
+          110
+        ],
+        [
+          0,
+          3,
+          108,
+          110
+        ],
+        [
+          0,
+          3,
+          105,
+          110
+        ]
+      ],
+      "specification_check": "Pass: 324x115; three nonempty 108x115 cells; transparency; <=80000 bytes"
+    }
+  ]
+}
