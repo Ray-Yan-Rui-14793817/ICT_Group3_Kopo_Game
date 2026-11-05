@@ -1,0 +1,56 @@
+{
+  "checkpoint": "2026-11-05",
+  "owner": "Rui Yan / Dev1",
+  "change": "Candy Restart button styling refinement",
+  "developer_confirmation": "Rui Yan supplied the final repaired Candy button sprite and confirmed the repair is completed.",
+  "source_filename": "Candy theme button-test-finial.png",
+  "repository_path": "Dev1_RuiYan/ICT2_Candy_Theme/Candy_Themes_design/candy_restart_button.png",
+  "filename_mapping": "The supplied final image replaces the existing candy_restart_button.png without changing the integration path.",
+  "before": {
+    "git_blob_sha1": "cd23f167c809cc9a8f754d64fa1e4efcae200f6d",
+    "bytes": 56014,
+    "commit": "23540277f50bc80b03a8115b8e58c6cf207a6960",
+    "url": "https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/blob/23540277f50bc80b03a8115b8e58c6cf207a6960/Dev1_RuiYan/ICT2_Candy_Theme/Candy_Themes_design/candy_restart_button.png"
+  },
+  "after": {
+    "bytes": 7704,
+    "width": 324,
+    "height": 115,
+    "mode": "P",
+    "alpha_extrema": [
+      0,
+      252
+    ],
+    "frame_bboxes": [
+      [
+        7,
+        5,
+        105,
+        106
+      ],
+      [
+        4,
+        5,
+        102,
+        106
+      ],
+      [
+        2,
+        5,
+        101,
+        106
+      ]
+    ],
+    "sha256": "b6aec0a109bd5ce882d701d0053ba6b477c584f949922c9bf3d5cc3e52ecbbcb",
+    "git_blob_sha1": "d9c00e990bf3d18e15442b848dbc8ef6b3906e92",
+    "png_decode": "Pass",
+    "three_nonempty_108x115_cells": "Pass",
+    "transparency": "Pass",
+    "at_most_80000_bytes": "Pass",
+    "visual_observation": "Three circular-arrow Restart icons; silver/brown, gold and silver/orange button states."
+  },
+  "pixel_changes_by_repository_update": "None. Source PNG bytes are uploaded unchanged.",
+  "game_testing": "Existing developer-confirmed completed game testing remains unchanged.",
+  "revision_specific_runtime_evidence": "No new KOPO Restart execution or deployment test is claimed by this repository update. The supplied repair and measured static checks are recorded separately.",
+  "historical_evidence": "The Week 6 report image and original ZIP manifests remain historical snapshots. The previous Restart blob remains accessible through Git history."
+}

@@ -17,7 +17,7 @@
 The games are completed development work. Repository asset integration is also completed through [merged PR #22](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/pull/22), merge commit [`15fe5b29b0c654d2b7e55bbebbfe4b388243e84f`](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/commit/15fe5b29b0c654d2b7e55bbebbfe4b388243e84f). Detailed test-document links and remaining packaging/quality follow-up are tracked separately in #25.
 
 - [US5 Candy #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 Chinese Festival #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) record completed game work.
-- [Repository, evidence and review follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) records the completed merge and tracks remaining evidence documentation, packaging questions and deferred Restart styling.
+- [Repository, evidence and review follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) records the completed merge and Restart styling repair, and tracks remaining evidence documentation and packaging questions.
 - [Existing Project Board](https://github.com/users/Ray-Yan-Rui-14793817/projects/2) uses Todo / In Progress / Done. Its historic Sprint 1 title and shared field conventions are preserved. The current release is ICT2 Beta / Assessment 2; no unsupported sprint number or new shared milestone is invented.
 
 ## Three completed ordering levels and KOPO links
@@ -40,7 +40,7 @@ Both US5/US6 URLs match the hyperlinks embedded in the supplied Assessment 2 Gro
 | Candy | [9 usable design PNG + source JSON](ICT2_Candy_Theme/Candy_Themes_design/) | [5 PNG](ICT2_Candy_Theme/Candy_Themes_level1/) | [5 PNG](ICT2_Candy_Theme/Candy_Themes_level2/) | [5 PNG](ICT2_Candy_Theme/Candy_Themes_level3/) |
 | Chinese Festival | [14 source PNG + source JSON](ICT2_Chinese_Festival_Theme/Chinese_Themes_design/) | [5 PNG](ICT2_Chinese_Festival_Theme/Chinese_Themes_level1/) | [5 PNG](ICT2_Chinese_Festival_Theme/Chinese_Themes_level2/) | [5 PNG](ICT2_Chinese_Festival_Theme/Chinese_Themes_level3/) |
 
-The original ZIP's 78 PNGs and 2 JSON files were inspected; all 15 previously merged Space images match by Git blob SHA-1 and remain unchanged. See the [original ZIP manifest](ICT2_Quality_Evidence/testing/asset_manifest.json) and [original static checks](ICT2_Quality_Evidence/testing/asset_validation.json). Source filenames and bytes are preserved, including `灯笼.png` and the two separately stored `orderingGameTilemap (2).json` files.
+The original ZIP's 78 PNGs and 2 JSON files were inspected; all 15 previously merged Space images match by Git blob SHA-1 and remain unchanged. See the [original ZIP manifest](ICT2_Quality_Evidence/testing/asset_manifest.json) and [original static checks](ICT2_Quality_Evidence/testing/asset_validation.json). The ZIP manifest and static checks remain historical snapshots. The current Restart sprite is a later developer-supplied replacement, documented separately; its previous bytes remain in Git history. Other source filenames and bytes are preserved, including `灯笼.png` and the two separately stored `orderingGameTilemap (2).json` files.
 
 ### Confirmed active Candy Pause sprite
 
@@ -54,7 +54,7 @@ The [current Assessment 2 evidence record](ICT2_Quality_Evidence/testing/assessm
 
 - US5/US6 testing is **Completed — developer confirmed**. Detailed dates, pass counts, per-case execution logs and independent acceptance are not invented where absent from the inspected evidence.
 - Week 6 Activity 3 identifies duplicate Pause/Exit meaning; Activity 5 records a distinct Pause icon and **Retest result: Pass**. This is the report's recorded result, not a fresh full-suite execution by the repository update.
-- Restart styling is a separate **Deferred** follow-up. Candy Resume's formal size rule and standalone tilemap packaging are tracked in #25; these do not imply unfinished game implementation.
+- **Candy Restart styling repair: Completed — confirmed by Dev1 Rui Yan.** The supplied final sprite replaces [candy_restart_button.png](ICT2_Candy_Theme/Candy_Themes_design/candy_restart_button.png): 324 × 115, 7,704 bytes, three nonempty 108 × 115 cells and transparency. [Revision validation](ICT2_Quality_Evidence/testing/candy_restart_refinement_validation.json) records the source-to-repository mapping and previous/current hashes. No new revision-specific KOPO retest is claimed by this upload. Candy Resume's formal size rule and standalone tilemap packaging remain in #25.
 - The required KOPO game-design review has passed, as confirmed by Dev1 Rui Yan. At merge, main was unprotected, no active repository rulesets or required checks were present, and no formal GitHub PR approval was required. Zero submitted GitHub reviews were recorded; no approval is fabricated.
 
 ## Repository and Sprint history
