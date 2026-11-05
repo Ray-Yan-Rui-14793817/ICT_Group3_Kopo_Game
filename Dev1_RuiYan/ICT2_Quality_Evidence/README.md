@@ -1,36 +1,33 @@
-# Dev1 — ICT2 asset quality and evidence
+# Dev1 — ICT2 quality and completion evidence
 
-**Checkpoint:** 5 November 2026 (Asia/Shanghai). **Owner:** Rui Yan / Dev1.
+**Current checkpoint:** 5 November 2026 (Asia/Shanghai). **Owner:** Rui Yan / Dev1. **Release:** ICT2 Beta / Assessment 2.
 
-## Evidence actually available
+Rui Yan has explicitly confirmed that **US5 Candy and US6 Chinese Festival game design, implementation and game testing are completed**, including Size, Quantity and Number Ordering. Supporting detailed test-document links can be consolidated without changing completed game work back to Todo.
 
-Source: the user-supplied `ICT2_Kopo_Image_Design.zip` and `CP5047_Ass2_Dev1_RuiYan_GitHub_Update_Plan.md`. The ZIP SHA-256 is recorded in the validation output. The plan is a source of reported design progress and earlier quality concerns; it is not an executed test log.
+## Evidence index
 
-- [Asset manifest](testing/asset_manifest.json): original ZIP paths, repository paths, byte sizes, Git blob hashes and whether the asset was already present in main.
-- [Static validation](testing/asset_validation.json): 78 PNGs verified and fully decoded with Pillow; 2 JSON maps parsed and tile-layer lengths checked. Button dimensions, alpha extrema and file sizes are measured. A 324 × 115 image can fit three 108 × 115 cells; visible pixels in each cell do not independently establish correct frame order or icon meaning.
-- The 15 Space PNGs already in main match the source ZIP byte for byte by Git blob SHA-1 and are unchanged.
-- All 80 source assets are preserved across the theme folders and refinement evidence. There are 65 newly added source files: 62 theme PNGs, 1 unsuitable Pause PNG retained as evidence, and 2 JSON files.
+- [Assessment 2 completion and testing record](testing/assessment2_completion.md): developer confirmation, report page references, actual gameplay images, Week 6 findings and precise documentation gaps.
+- [Additional evidence validation](testing/assessment2_evidence_validation.json): report SHA-256, page/crop provenance, six additional PNG checks and the active Candy Pause byte comparison.
+- [Original ZIP manifest](testing/asset_manifest.json) and [static validation](testing/asset_validation.json): historical source checkpoint for 78 PNGs and 2 JSON files, including 15 unchanged Space images. These records remain unchanged and retain the failed check for the unsuitable ZIP Pause image.
 
-These are automated static asset checks. No KOPO interaction tests, child UAT, independent human review or peer acceptance were performed during this update. No screenshots or review comments absent from the supplied files have been fabricated.
+The source report is `CP5047 Assessment 2 Group Implementation and Demonstration Group3.pdf` (45 pages). Only Dev1 evidence is reproduced here; shared pages are cropped to exclude other developers' work. These images are rendered from existing report pages, not fabricated screenshots or new historical test executions.
 
-## Quality record
+## Current quality status
 
-| Concern | Expected | Observed evidence | Action in this update | Status / next step |
-| --- | --- | --- | --- | --- |
-| Candy Pause final export | Per supplied plan: transparent 324 × 115 PNG, three 108 × 115 cells, ≤80,000 bytes, distinct Pause meaning | Source is RGBA, 1536 × 1024, 2,470,318 bytes; it cannot meet the specified cell geometry | Preserve [the exact source image](refinement/Candy%20Pause%20Button%20png.png) outside the Candy theme asset directory | Specification check failed; Rui Yan to supply/confirm the actual final sprite, then perform visual and runtime checks |
-| Candy Resume size | Actual KOPO limit must be confirmed | 80,640 bytes: exceeds 80,000 but fits 80 KiB | Preserve original bytes and document both thresholds | Pending limit confirmation; compress only if the true limit requires it |
-| Candy Pause / Exit distinguishability | Clear, distinct Pause and Exit meaning | Earlier duplication and refinement are reported in the supplied plan; this ZIP does not establish a verified final Pause export or executed retest | Record the concern; do not label the supplied image as an approved After version | Visual and runtime retest pending; no reviewer named |
-| Candy Restart styling | Consistent controls | Deferred styling concern reported in the supplied plan | Preserve the source sprite; no styling change performed | Deferred follow-up; no Complete or Retest Pass claim |
-| Space Drop Box visibility | Clearly visible target in the active game | Existing source image available; earlier alternative comparisons are reported but not attached in this ZIP | Preserve existing Space bytes and record the evidence gap | Selection and KOPO placement testing pending |
-| Chinese Festival active design variants | Identify assets actually used in KOPO | Two Drop Box PNGs plus a generically named PNG are supplied; no usage map | Preserve both variants and original names | Owner confirmation and platform compatibility check pending |
-| Tilemap provenance / dependency | Confirm export actually used and resolve referenced image | Both maps use Git blob `088394b2e3300d9e177683ff56fe2ec46d8e56de`, also present in ICT1. Both reference `background.png`; Chinese Festival provides a differently named background | Preserve original JSON beside each theme's source designs | Not an integration-ready export; confirm use and resolve the Chinese reference before import |
+| Concern | Evidence and result | Current state |
+| --- | --- | --- |
+| US5/US6 game testing | Completed, explicitly confirmed by Dev1 Rui Yan; Section 1 shows all three levels for each theme | **Completed — developer confirmed; detailed supporting test links to be consolidated** |
+| Candy Pause active version | `candy_pause_button.png` is 324 × 115, 15,106 bytes, transparent and contains three nonempty 108 × 115 cells. It is byte-identical to the image loaded by Candy (KOPO file ID 232120) | Active version identified; measured specification check Pass |
+| Unsuitable ZIP Pause source | [Historical image](refinement/Candy%20Pause%20Button%20png.png): 1536 × 1024, 2,470,318 bytes | Historical source specification Fail retained; this is not the active game sprite |
+| Candy Pause/Exit meaning | [Before](refinement/week6_pause_exit_before.png), [After and reported retest](refinement/week6_pause_exit_after_retest.png); Group Report Week 6 Activity 5 explicitly records Retest result: Pass | Refinement and reported retest completed; no fabricated execution date or fresh full-suite claim |
+| Candy Restart styling | [Week 6 Test 2](refinement/week6_restart_followup.png) identifies style differences and records later improvement | **Deferred**; no new styling change claimed |
+| Candy Resume size rule | Supplied and currently loaded sprite is 80,640 bytes: above 80,000 but below 81,920 | Formal upload-size requirement to confirm; game completion unchanged |
+| Source tilemaps | Both preserved maps match the ICT1 blob and reference `background.png`; Chinese source package uses a differently named background | Standalone export usage/dependency follow-up; not evidence of an unfinished running game |
+| Space Drop Box | Existing source bytes and original quality concern retained | Earlier variant selection / integration evidence can be consolidated separately |
+| Independent peer approval | No submitted reviews found on PR #22 at this checkpoint | Outstanding; tracked separately in #25 |
 
-## Assessment 2 traceability
+## Tracking and scope
 
-The theme folders and asset PR support the image-design contribution in Section 1. The measurements and open concerns above support static quality findings for Section 2. The unsuitable Pause image supports an observed specification failure, but this update supplies no corrected After asset or runtime retest for Section 3. A future independent PR review can support Section 4 only after it actually occurs.
+[US5 #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) describe completed game development/testing. [Follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) tracks draft PR #22, evidence-document consolidation, independent review, source-package questions and deferred Restart styling. These remaining tasks are not requirements to redo the completed games.
 
-## Remaining evidence
-
-Rui Yan should identify active KOPO versions, confirm the Pause sprite and tilemap usage, and supply actual test records where available. A future test record should identify the version, date, tester, expected and actual behaviour, result and evidence URL. A teammate's review and acceptance decision should be linked only after that review occurs.
-
-PR #20 remains a separate historical documentation proposal. No shared Project Board fields, other developer content or earlier issue states are changed by the asset files in this branch.
+The earlier asset-only checkpoint correctly stated that this repository update had not independently executed the three-level runtime test suite. The later developer confirmation and newly inspected report now establish the current completion record. Earlier commits and original static measurements are preserved. No other developer files, Issues, branches or PRs are modified.
