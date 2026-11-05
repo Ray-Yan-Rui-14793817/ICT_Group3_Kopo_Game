@@ -4,7 +4,7 @@
 
 ## Completion basis
 
-In the current user request, Rui Yan explicitly confirms that US5 Candy and US6 Chinese Festival **game design, three-level KOPO implementation and game testing are completed**. The three levels are Size Ordering, Quantity Ordering and Number Ordering. This confirmation concerns the completed games, independently of the draft GitHub asset synchronisation PR.
+In the current user request, Rui Yan explicitly confirms that US5 Candy and US6 Chinese Festival **game design, three-level KOPO implementation and game testing are completed**. The three levels are Size Ordering, Quantity Ordering and Number Ordering. This confirmation concerns the completed games, independently of repository integration, which is now completed through merged PR #22.
 
 **Game Testing: Completed — confirmed by Dev1 Rui Yan; supporting evidence links to be consolidated.**
 
@@ -14,7 +14,7 @@ The source Assessment 2 Group Report was inspected directly. The linked images b
 
 | Story | Verified report content | KOPO link | Repository evidence |
 | --- | --- | --- | --- |
-| US4 Space | pp. 2–3 describe all three ordering activities; p. 3 includes a Space Level 3 screenshot | [Space](https://www.kopo.com/g/game.php?gno=14378&lid=5377&thmno=5109) | [Report p. 3](report_section1_us4_us5.png); merged PR #21; remaining level images in PR #22 |
+| US4 Space | pp. 2–3 describe all three ordering activities; p. 3 includes a Space Level 3 screenshot | [Space](https://www.kopo.com/g/game.php?gno=14378&lid=5377&thmno=5109) | [Report p. 3](report_section1_us4_us5.png); merged PR #21; Level 2–3 images merged into main through PR #22 |
 | US5 Candy | p. 3 describes the theme and contains Level 1, Level 2 and Level 3 gameplay screenshots | [Candy](https://www.kopo.com/g/game.php?gno=14378&lid=5381&thmno=5112) | [Actual three-level screenshots](report_section1_us4_us5.png); [theme assets](../../ICT2_Candy_Theme/) |
 | US6 Chinese Festival | p. 4 describes the theme and contains Level 1, Level 2 and Level 3 gameplay screenshots | [Chinese Festival](https://www.kopo.com/g/game.php?gno=14378&lid=5391&thmno=5142) | [Dev1 portion of report p. 4](report_section1_us6.png); [theme assets](../../ICT2_Chinese_Festival_Theme/) |
 
@@ -46,8 +46,12 @@ The original oversized ZIP image remains separate as source evidence. The runtim
 ## Section 4 — actual repository coordination and approval
 
 - [Asset and documentation PR #22](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/pull/22) contains only Dev1 changes and preserves per-theme commits.
-- [US5 #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) record completed games. [Follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) separately tracks asset synchronisation, evidence documentation and independent review.
+- [US5 #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) record completed games. [Follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) records the completed asset merge and separately tracks remaining evidence documentation, source-package questions and deferred Restart styling.
 - [Existing Project Board](https://github.com/users/Ray-Yan-Rui-14793817/projects/2) uses Todo / In Progress / Done; current release ownership is Rui Yan / Dev1, ICT2 Beta / Assessment 2. Shared project conventions and earlier US4 states are retained.
-- Report p. 44 describes shared Candy UI review as a collaborative practice. This report description is not represented as a submitted approval on PR #22. No reviews were returned for that PR when inspected.
+- Report p. 44 describes shared Candy UI review as a collaborative practice. This report description is not represented as a submitted approval on PR #22. No submitted GitHub reviews were recorded when merging. The current merge request explicitly confirms that the required KOPO game-design review has passed. Repository rules were checked separately: no formal GitHub approval was required, and no reviewer identity, approval comment or review timestamp is inferred.
 
-Remaining work is limited to the open PR/review, consolidating detailed existing test-document links, the formal Resume size rule, standalone tilemap usage and deferred Restart styling, as tracked in #25.
+Remaining work is limited to consolidating detailed existing test-document links, the formal Resume size rule, standalone tilemap usage and deferred Restart styling, as tracked in #25. The asset PR merge and required game-design review are completed.
+
+## Verified repository integration
+
+[PR #22](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/pull/22) is **Merged**. Merge commit: [`15fe5b29b0c654d2b7e55bbebbfe4b388243e84f`](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/commit/15fe5b29b0c654d2b7e55bbebbfe4b388243e84f). The merged main tree was checked against the reviewed PR head: all intended files match, with no changes to other developer subtrees, ICT1 Alpha or the 15 original Space images. US4, US5 and US6 game completion remains unchanged. Current asset/evidence links use relative main paths; historical commit links remain permanent references.

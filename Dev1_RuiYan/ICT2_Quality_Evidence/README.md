@@ -24,10 +24,15 @@ The source report is `CP5047 Assessment 2 Group Implementation and Demonstration
 | Candy Resume size rule | Supplied and currently loaded sprite is 80,640 bytes: above 80,000 but below 81,920 | Formal upload-size requirement to confirm; game completion unchanged |
 | Source tilemaps | Both preserved maps match the ICT1 blob and reference `background.png`; Chinese source package uses a differently named background | Standalone export usage/dependency follow-up; not evidence of an unfinished running game |
 | Space Drop Box | Existing source bytes and original quality concern retained | Earlier variant selection / integration evidence can be consolidated separately |
-| Independent peer approval | No submitted reviews found on PR #22 at this checkpoint | Outstanding; tracked separately in #25 |
+| Required KOPO game-design review | Passed, confirmed by Dev1 Rui Yan for US4–US6 | Completed; no duplicate design review required |
+| GitHub PR approval / integration | No formal PR approval required by the rules checked at merge; zero submitted reviews recorded | PR #22 merged; no GitHub approval invented |
 
 ## Tracking and scope
 
-[US5 #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) describe completed game development/testing. [Follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) tracks draft PR #22, evidence-document consolidation, independent review, source-package questions and deferred Restart styling. These remaining tasks are not requirements to redo the completed games.
+[US5 #23](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/23) and [US6 #24](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/24) describe completed game development/testing. [Follow-up #25](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/issues/25) records the completed PR #22 merge and tracks evidence-document consolidation, source-package questions and deferred Restart styling. These remaining tasks are not requirements to redo the completed games.
 
 The earlier asset-only checkpoint correctly stated that this repository update had not independently executed the three-level runtime test suite. The later developer confirmation and newly inspected report now establish the current completion record. Earlier commits and original static measurements are preserved. No other developer files, Issues, branches or PRs are modified.
+
+## Main integration checkpoint
+
+[PR #22](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/pull/22) was merged using a merge commit on 5 November 2026. Merge SHA: [`15fe5b29b0c654d2b7e55bbebbfe4b388243e84f`](https://github.com/Ray-Yan-Rui-14793817/ICT_Group3_Kopo_Game/commit/15fe5b29b0c654d2b7e55bbebbfe4b388243e84f). Space Level 2–3, Candy (including the verified active Pause sprite), Chinese Festival and Assessment 2 evidence are present in main. Original Space assets, ICT1 Alpha and all other developer subtrees are unchanged. Design-review completion is the developer's confirmation; GitHub-specific approval requirements were checked separately and none blocked the merge.
